@@ -50,9 +50,9 @@ The basic template has a couple of components, but only renders one (in Main.fs)
 
 Now maybe I should have just read more carefully, but it took me a while to realize that the "/#/" was critical to the way that Feliz does routing by default. Once I dug a little further, I realized there were some alternate options, but I decided to leave them that way for the time being. Below is the code and what that looks like:
 
-![F# code for the Main Page component](/img/2022/11/21/fable-masto-figure-1.png)
+![F# code for the Main Page component](/images/2022/11/21/fable-masto-figure-1.png)
 
-![A simple HTML form with the label 'Instance', a text input, and a submit button](/img/2022/11/21/fable-masto-figure-2.png)
+![A simple HTML form with the label 'Instance', a text input, and a submit button](/images/2022/11/21/fable-masto-figure-2.png)
 
 With the form set up, it was time to wire up an HTTP request, per the Mastodon documentation. My first instinct was to use a utility I had used once before, FsHttp. After pulling in the package and getting a strange error, it dawned on me: this code ultimately compiles down to Javascript, so I can't use FsHttp (which I'm fairly sure uses .NET's HttpClient under the hood). After consulting the Fable docs again, it became evident that I would need to use Fable.Fetch or Thoth.Fetch (which wraps Fable.Fetch). This is where things went fairly off the rails...
 
@@ -70,6 +70,6 @@ At this point, it was clear that I would need to change the routing mode for Fel
 
 With all of those shenanigans out of the way, I finally have the first small piece of my client working. Users can go to the page, type in the domain of their Mastodon instance, and the app will reach out to register itself and get back a set of credentials. Here's the code for the Main Page at this point:
 
-![F# code for the Main Page component, with a working HTTP request](/img/2022/11/21/fable-masto-figure-3.png)
+![F# code for the Main Page component, with a working HTTP request](/images/2022/11/21/fable-masto-figure-3.png)
 
 The plan now, is to tackle two problems next: storing the credentials and pulling a user's account information, but that will have to wait until next time.
