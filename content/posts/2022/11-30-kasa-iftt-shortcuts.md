@@ -56,7 +56,7 @@ From here, I clicked "Continue", gave my Applet a title and I was done with IFTT
 
 With IFTT out of the way, it was time to create my shortcuts. I decided to go with "Home Automation" shortcuts, as those meant that any one could trigger them with their voice using our HomePod mini. The actual Shortcut is pretty straight forward, it is a single IFTT "Trigger Applet" Shortcut that triggers the "activate Night" IFTT widget button.
 
-![A screenshot of the Shortcut app with a single IFTT 'Trigger Applet' Shortcut with the 'activate Night' applet selected.](/images/2022/11/30/fig_5.png)
+![A screenshot of the Shortcut app with a single IFTT 'Trigger Applet' Shortcut with the 'activate Night' applet selected.](/images/2022/11/30/fig_5.PNG)
 
 Once I had this set up, I was able to replace my existing Kasa Shortcuts in some of the Automations that I had previously had. For example, I was able to reuse the existing Shortcut that I had set up to run when Carplay Connects:
 
