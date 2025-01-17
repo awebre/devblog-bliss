@@ -107,7 +107,7 @@ module.exports = {
     // edit content/_data/utils/og-image.njk
     enableImageGeneration: true,
     // Background color for auto-generated OpenGraph images
-    ogImageBackgroundColor: '#1773cf',
+    ogImageBackgroundColor: '#0D9488',
     // Text color for for auto-generated OpenGraph images
     ogImageTextColor: '#fff',
   },
@@ -141,10 +141,10 @@ module.exports = {
     language: 'en-US',
     // Default theme color for PWA application. Affects how the OS displays
     // the site
-    themeColor: '#1773cf',
+    themeColor: '#0D9488',
     // Placeholder background color for the application page to display
     // before its stylesheet is loaded
-    backgroundColor: '#1773cf',
+    backgroundColor: '#0D9488',
   },
   // ---------------------------------------------------------------------------
   // Settings for post share buttons
@@ -186,7 +186,7 @@ module.exports = {
       // Color of the links on the site. Since XSLT stylesheet is a separate
       // entity from the rest of the site styling, it has to be
       // specified manually
-      baseColor: '#1773cf',
+      baseColor: '#0D9488',
     },
     // Settings for RSS feed displaying post excerpts
     excerpts: {
