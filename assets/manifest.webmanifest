@@ -1,8 +1,8 @@
 {
-  "name": "Bliss",
+  "name": "dev.thewebres.com",
   "lang": "en",
-  "short_name": "Bliss",
-  "description": "Simple Eleventy blog template",
+  "short_name": "Dev.TheWebre",
+  "description": "I'm Austin Webre, and this is my dev blog",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
