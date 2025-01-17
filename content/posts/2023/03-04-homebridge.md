@@ -43,11 +43,11 @@ sudo apt-get update && sudo apt-get install homebridge
 
 And just like that, Homebridge should be running. In order to get to the UI, we'll need to find out our public IP Address (using a command such as `ifconfig`). From there it's just navigating to http://your-ip-adddress:8581 and following the setup UI.
 
-![A screenshot of the Homebridge 'Get Started' UI, with the Homebridge logo in the middle and a 'Get Started' button.](/images/2023/3/4/homebridge-get-started.png)
+![A screenshot of the Homebridge 'Get Started' UI, with the Homebridge logo in the middle and a 'Get Started' button.](/images/2023-3-4-homebridge-get-started.png)
 
 You'll enter a username and password for your admin account and then go to the dashboard, where you'll see something like this.
 
-![A screenshot of the Homebridge dashboard, which shows CPU load, memory, uptime and logs. To the left a QR code for joining your Homebridge to HomeKit has been redacted.](/images/2023/3/4/homebridge-dash.png)
+![A screenshot of the Homebridge dashboard, which shows CPU load, memory, uptime and logs. To the left a QR code for joining your Homebridge to HomeKit has been redacted.](/images/2023-3-4-homebridge-dash.png)
 
 You can scan the QR Code in the top left, which has been redacted here, to join the Homebridge to your Home in HomeKit. Once you are through pairing the bridge, you can begin installing plugins for
 the various devices that you have.
@@ -57,25 +57,25 @@ the various devices that you have.
 To start adding Kasa Devices, you'll need to go to the "Plugins" page and search for "Kasa" or "tplink". You're looking for the
 "Homebridge Tplink Smarthome" plugin. Once you've found it, click "Install".
 
-![A screenshot of the Homebridge plugin search.](/images/2023/3/4/homebridge-plugin-search.png)
+![A screenshot of the Homebridge plugin search.](/images/2023-3-4-homebridge-plugin-search.png)
 
 Give your Kasa plugin a name, I'm going with the ever-descriptive "Kasa".
 
-![A screenshot of the Kasa plugin configuration, with the word 'Kasa' entered into the 'Name' input.](/images/2023/3/4/homebridge-name-kasa.png)
+![A screenshot of the Kasa plugin configuration, with the word 'Kasa' entered into the 'Name' input.](/images/2023-3-4-homebridge-name-kasa.png)
 
 Then you can choose whether to run your Kasa plugin as a "child" bridge. This is supposed to improve responsiveness and performance, so I've decided to enable
 that option. Note that if you do select to run it as a child bridge, you will need to hit the "restart" button in the top right of the Homebridge UI.
 
-![A screenshot of the Kasa plugin configuration with the 'Child Bridge' option enabled. There is a warning that the Homebridge server will need to be restarted if this option remains enabled.](/images/2023/3/4/homebridge-kasa-child.png)
+![A screenshot of the Kasa plugin configuration with the 'Child Bridge' option enabled. There is a warning that the Homebridge server will need to be restarted if this option remains enabled.](/images/2023-3-4-homebridge-kasa-child.png)
 
 Since this is running as a child bridge, we'll need to add it to our Home separately. After the Homebridge server restarts, you'll go back to "Plugins" and find the
 "Connect to HomeKit" button shown below.
 
-![A screenshot of the Kasa plugin card, with the 'Connect to HomeKit' button hovered.](/images/2023/3/4/homebridge-kasa-connect.png)
+![A screenshot of the Kasa plugin card, with the 'Connect to HomeKit' button hovered.](/images/2023-3-4-homebridge-kasa-connect.png)
 
 That should bring up this modal, with another joining QR code.
 
-![A screenshot of the Kasa plugin configuration, with the word 'Kasa' entered into the 'Name' input.](/images/2023/3/4/homebridge-kasa-connect2.png)
+![A screenshot of the Kasa plugin configuration, with the word 'Kasa' entered into the 'Name' input.](/images/2023-3-4-homebridge-kasa-connect2.png)
 
 This plugin will automatically detect Kasa devices on your network and walk you through adding each of them to HomeKit, so that they show up in the correct rooms with the
 correct names. Once you've run out of prompts to add new devices, you're all done and all of your Kasa devices should be added.

@@ -21,7 +21,7 @@ Given the headache I had with getting this Fable-based application up and runnin
 
 If you've read the docs around Azure Static Web Apps, they promise a streamlined way to create websites from static content, such as HTML, CSS, and Javascript. I started with the process that it described [in the docs](https://learn.microsoft.com/en-us/azure/static-web-apps/get-started-portal?tabs=vanilla-javascript&pivots=github#create-a-static-web-app), but quickly realized that something was up...
 
-![Figure 1](/images/2022/11/22/figure_1.png)
+![Figure 1](/images/2022-11-22-figure_1.png)
 
 Now this original error message seemed to suggest that there were issues with the dependencies as they were installed from the template, but everything seemed to work fine for me locally, so I totally ignored that and started frantically Googling. This brought me to a [very helpful dev.to article](https://dev.to/azure/creating-static-web-apps-with-f-and-fable-4nac) with some sample code. I updated my github actions to match this setup, and... still no luck.
 
@@ -52,4 +52,4 @@ _For some helpful image manipulation tricks see [this post](/favicon-generation-
 
 The end result is a web app that you can install on your device! [Check it out!](https://incognitum.thewebres.com)
 
-![Figure 2](/images/2022/11/22/figure_2.png)
+![Figure 2](/images/2022-11-22-figure_2.png)

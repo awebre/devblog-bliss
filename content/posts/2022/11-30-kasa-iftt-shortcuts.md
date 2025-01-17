@@ -32,15 +32,15 @@ This was quite annoying to me. I'm familiar with IFTT (in fact, I probably have 
 
 The first thing I did was get my scenes together in the Kasa app. In my case, I have a "Night" scene, which turns off the Christmas Tree as well as my power tool batteries (just in case I left them on).
 
-![A screenshot of a Kasa scene with an action to turn Christmas Tree off and an action to turn off the 'Batteries' group.](/images/2022/11/30/fig_1.PNG)
+![A screenshot of a Kasa scene with an action to turn Christmas Tree off and an action to turn off the 'Batteries' group.](/images/2022-11-30-fig_1.PNG)
 
 Next, I logged into the IFTT app (created an account as needed) and searched for "Kasa". I found an option like the one shown below:
 
-![A screenshot of the IFTT app, with the search 'Kasa' entered and the TP-Link Kasa icon showing.](/images/2022/11/30/fig_2.jpeg)
+![A screenshot of the IFTT app, with the search 'Kasa' entered and the TP-Link Kasa icon showing.](/images/2022-11-30-fig_2.jpeg)
 
 I clicked "Connect" which asked me to log in to my TP-Link Kasa account and authorized the connection between IFTT and Kasa. Once this was complete, I clicked "Create", which brought me into the IFTT Applet workflow. Step one is to add the "Button Widget" service and select "Button press" as the action, ending up with something like this:
 
-![A screenshot of the IFTT create Applet Workflow, with the 'IF' section filled with the button press widget.](/images/2022/11/30/fig_3.PNG)
+![A screenshot of the IFTT create Applet Workflow, with the 'IF' section filled with the button press widget.](/images/2022-11-30-fig_3.PNG)
 
 _Note: you could also do this via the IFTT webhooks, which the official Kasa guides recommend, but using the button widget is much easier (trust me)_
 
@@ -50,16 +50,16 @@ _Note: these scenes only seem to sync once, so when I eventually added additiona
 
 The results looked something like this (this is the Edit version of the same workflow)
 
-![A screenshot of the IFTT app, with the search 'Kasa' entered and the TP-Link Kasa icon showing.](/images/2022/11/30/fig_4.jpg)
+![A screenshot of the IFTT app, with the search 'Kasa' entered and the TP-Link Kasa icon showing.](/images/2022-11-30-fig_4.jpg)
 
 From here, I clicked "Continue", gave my Applet a title and I was done with IFTT!
 
 With IFTT out of the way, it was time to create my shortcuts. I decided to go with "Home Automation" shortcuts, as those meant that any one could trigger them with their voice using our HomePod mini. The actual Shortcut is pretty straight forward, it is a single IFTT "Trigger Applet" Shortcut that triggers the "activate Night" IFTT widget button.
 
-![A screenshot of the Shortcut app with a single IFTT 'Trigger Applet' Shortcut with the 'activate Night' applet selected.](/images/2022/11/30/fig_5.PNG)
+![A screenshot of the Shortcut app with a single IFTT 'Trigger Applet' Shortcut with the 'activate Night' applet selected.](/images/2022-11-30-fig_5.PNG)
 
 Once I had this set up, I was able to replace my existing Kasa Shortcuts in some of the Automations that I had previously had. For example, I was able to reuse the existing Shortcut that I had set up to run when Carplay Connects:
 
-![A screenshot of a Shortcut that compares the phone's current address to a static address and runs the 'Winding Down' shortcut if they match.](/images/2022/11/30/fig_6.jpg)
+![A screenshot of a Shortcut that compares the phone's current address to a static address and runs the 'Winding Down' shortcut if they match.](/images/2022-11-30-fig_6.jpg)
 
 And that's how I got my Kasa smart plugs integrated again with all my favorite Shortcuts!
